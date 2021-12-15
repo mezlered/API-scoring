@@ -21,6 +21,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v1
+        with:
+          python-version: 2.7
 
       # Runs a single command using the runners shell
       - name: test_one
