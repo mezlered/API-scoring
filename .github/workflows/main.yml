@@ -26,7 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: test_one
-        run: ls -la
+        run: python --version
         
       - name: test_two
         run: cat requirements.txt
