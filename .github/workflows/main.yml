@@ -25,7 +25,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: tests
         env:
-          CI_ANALYZER_PG_URL: postgresql://user:hackme@postgres/analyzer
+          CI_ANALYZER_PG_URL: d
         with:
           args: /bin/bash -c "pip install requiremensts.txt && python -m tests.unit.test_fields"
-        run: python -m tests.unit.test_fields 
+        run: "python -m tests.unit.test_fields"
