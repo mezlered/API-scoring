@@ -37,7 +37,7 @@ jobs:
       - name: Test field
         run: |
          sudo pip install redis
-         python2.7 --versions
+         python2.7 --version
       
       - name: Happy!!
         run : echo "Happy"  
